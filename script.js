@@ -1,5 +1,5 @@
 var audio = new Audio('assets/sentmessage.mp3');
-var contactString = "<div class='social'> <a target='_blank' href='tel:+62895345600004'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>0895345600004</label></div> </a> <a href='mailto:admin@tokenkita.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> <a target='_blank' href='https://wa.me/+62895345600004'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/ronimyid'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> </div>";
+var contactString = "<div class='social'> <a target='_blank' href='tel:+62895345600004'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>0895345600004</label></div> </a> <a href='mailto:gusti@roni.my.id'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> <a target='_blank' href='https://wa.me/+62895345600004'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/ronimyid'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> </div>";
 var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>.pdf</label></div><a href='assets/Bot&#39;s Resume.pdf' download='.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
 var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.542539287912!2d109.085069!3d0.278256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e2931c141bf067%3A0x9aa79a5d9ae0f784!2sHOBI!5e0!3m2!1sid!2sid!4v1695362894398!5m2!1sid!2sid' class='map'></iframe></div><label class='add'><address>4 'Sungai Pinyuh'<br>Kalimantan</address>";
 
@@ -92,11 +92,11 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hi kak 👋🏻,<br><br>Saat ini <span class='bold'><a class='alink'>tokenkita.com</a> Sedang Maintenance.</span><br><br>Harap bersabar ya kak atau dapat menghubungi kami di <span class='bold'>admin@tokenkita.com</span><br><br>Terima Kasih.<br><br>Ketik <span class='bold'>'bantuan'</span> untuk perintah<br>");
+                sendTextMessage("Hi kak 👋🏻,<br><br>Selamat Datang, <span class='bold'><a class='alink'>di roni.my.id</a> ^_^ </span><br><br>Hubungi saya di <span class='bold'>gusti@roni.my.id</span><br><br>Terima Kasih.<br><br>Ketik <span class='bold'>'bantuan'</span> untuk perintah<br>");
             }, 2000);
             break;
         case "bantuan":
-            sendTextMessage("<span class='sk'>pilih kata kunci berikut ini kak<br>Contoh:<br><span class='bold'>'alamat'</span> - untuk mengetahui alamat server kami<br><span class='bold'>'clear'</span> - untuk membersihkan isi chat ini<br><span class='bold'>'tentang'</span> - untuk mengetahui tentang web Token Kita<br><span class='bold'>'hubungi'</span> - untuk menghubungi kami</span>");
+            sendTextMessage("<span class='sk'>pilih kata kunci berikut ini kak<br>Contoh:<br><span class='bold'>'alamat'</span> - untuk mengetahui alamat server kami<br><span class='bold'>'clear'</span> - untuk membersihkan isi chat ini<br><span class='bold'>'tentang'</span> - untuk mengetahui tentang saya<br><span class='bold'>'hubungi'</span> - untuk menghubungi kami</span>");
             break;
         case "alamat":
             sendTextMessage(addressString);
@@ -105,7 +105,7 @@ function waitAndResponce(inputText) {
             clearChat();
             break;
         case "tentang":
-            sendTextMessage("🛠️💻 Kami adalah Token Kita<br><br>👨🏻‍💻 ^^ <a class='alink' target='_blank' href='https://tokenkita.com'><span class='bold'>tokenkita.com</a> ❤️</span>");
+            sendTextMessage("🛠️💻 Roni<br><br>👨🏻‍💻 ^^ <a class='alink' target='_blank' href='https://roni.my.id'><span class='bold'>roni.my.id</a> ❤️</span>");
             break;
         case "hubungi":
             sendTextMessage(contactString);
